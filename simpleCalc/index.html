@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>jQuery Calculator</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+
+        <div class="align-center">
+            <button class="calcType" data-calcType="simple" >Simple calculator</button>
+            <hr>
+            <button class="calcType" data-calcType="rest">Calculator with ajax request to Rest service</button>
+        </div>
+
+        <table class="calculator simple" id="calc" >
+            <tr>
+                <td colspan="4" class="calc_td_result">
+                    <input type="text" name="calc_result" id="calc_result" class="calc_result" />
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="CE" />
+                </td>
+                <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="C" />
+                </td>
+                <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="%" disabled="disabled" />
+                </td>
+                <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="+"  />
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="7"  />
+                </td>
+                <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="8"  />
+                </td>
+                <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="9"  />
+                </td>
+                <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="-"  />
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="4"  />
+                </td>
+                <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="5"  />
+                </td>
+                <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="6"  />
+                </td>
+                <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="*"  />
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="1"  />
+                </td>
+                <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="2"  />
+                </td>
+                <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="3"  />
+                </td>
+                <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="/" />
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="0" />
+                </td>
+                <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="&plusmn;" />
+                </td>
+                <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="."  />
+                </td>
+                <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="=" id="eq_btn" data-calcType="simple" />
+                </td>
+            </tr>
+        </table>
+
+        <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+
+    </body>
+</html>
